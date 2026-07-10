@@ -1,16 +1,20 @@
-# React + Vite
+# CareBridge ❤️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CareBridge is a medical assistance platform connecting verified hospitals with donors who want to help patients who cannot afford treatment.
 
-Currently, two official plugins are available:
+## Vision
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+No patient should lose access to healthcare because of financial limitations.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Hospital verified assistance requests
+- Donor dashboard
+- Patient funding tracking
+- AI-powered medical request summaries
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Tailwind CSS
+- Google Gemini AI
