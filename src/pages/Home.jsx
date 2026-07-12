@@ -101,7 +101,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-              className="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto lg:mx-0"
+              className="font-body-lg text-body-lg text-on-surface-variant max-w-[36rem] mx-auto lg:mx-0"
             >
               Bridging the medical funding gap with transparency and precision. We empower
               hospitals and donors to transform lives through verified clinical cases.
@@ -252,7 +252,7 @@ export default function Home() {
             </div>
 
             <div className="flex-1 w-full flex justify-center">
-              <div className="relative w-full max-w-md aspect-square bg-surface-container rounded-xxl overflow-hidden border border-outline-variant shadow-inner flex items-center justify-center p-md">
+              <div className="relative w-full max-w-[28rem] aspect-square bg-surface-container rounded-xxl overflow-hidden border border-outline-variant shadow-inner flex items-center justify-center p-md">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10" />
                 <div className="relative z-10 w-full space-y-sm">
                   <div className="bg-white p-sm rounded-lg shadow-md border border-outline-variant/50">

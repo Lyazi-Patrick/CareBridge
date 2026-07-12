@@ -31,7 +31,7 @@ export default function Footer() {
   return (
     <footer className="bg-surface-container-highest border-t border-outline-variant w-full mt-xxl">
       <div className="max-w-7xl mx-auto px-md md:px-margin-desktop py-xl flex flex-col md:flex-row justify-between gap-xl">
-        <div className="flex flex-col gap-md max-w-xs">
+        <div className="flex flex-col gap-md max-w-[20rem]">
           <span className="text-headline-lg font-bold text-primary">CareBridge</span>
           <p className="text-body-sm text-on-surface-variant">
             Bridging the gap in medical funding with AI-enhanced verification and clinical

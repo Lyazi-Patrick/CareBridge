@@ -71,7 +71,7 @@ export default function CreateAssistanceRequest() {
   if (submitted) {
     return (
       <div className="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex items-center justify-center p-md">
-        <div className="bg-white rounded-3xl p-xl md:p-xxl max-w-lg w-full text-center shadow-2xl">
+        <div className="bg-white rounded-3xl p-xl md:p-xxl max-w-[32rem] w-full text-center shadow-2xl">
           <div className="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-lg">
             <ListChecks size={36} className="text-secondary" aria-hidden="true" />
           </div>

@@ -16,7 +16,7 @@ export default function AuthShell({ eyebrow, title, subtitle, children }) {
   return (
     <div className="min-h-[calc(100vh-80px)] grid lg:grid-cols-2">
       <div className="flex items-center justify-center px-md md:px-xxl py-xxl">
-        <div className="w-full max-w-md space-y-xl">
+        <div className="w-full max-w-[32rem] space-y-xl">
           <div className="space-y-sm">
             <span className="text-label-md text-primary uppercase tracking-wider">
               {eyebrow}
@@ -29,7 +29,7 @@ export default function AuthShell({ eyebrow, title, subtitle, children }) {
       </div>
 
       <div className="hidden lg:flex hero-mesh items-center justify-center p-xxl relative overflow-hidden">
-        <div className="relative z-10 max-w-md space-y-xl">
+        <div className="relative z-10 max-w-[28rem] space-y-xl">
           <Link to="/" className="text-headline-lg font-bold text-primary">
             CareBridge
           </Link>

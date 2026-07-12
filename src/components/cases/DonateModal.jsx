@@ -50,7 +50,7 @@ export default function DonateModal({ medicalCase, onClose, onDonated }) {
 
   return (
     <div className="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex items-center justify-center p-md">
-      <div className="bg-white rounded-3xl p-xl max-w-md w-full shadow-2xl relative">
+      <div className="bg-white rounded-3xl p-xl max-w-[28rem] w-full shadow-2xl relative">
         <button
           onClick={onClose}
           className="absolute top-lg right-lg text-outline hover:text-on-surface"
