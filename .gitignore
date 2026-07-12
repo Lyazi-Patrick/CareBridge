@@ -12,6 +12,18 @@ dist
 dist-ssr
 *.local
 
+# Environment variables (Gemini API key etc.)
+.env
+.env.local
+.env.*.local
+
+# Backend (server/) — SQLite db files and its own node_modules
+server/node_modules
+server/db/*.db
+server/db/*.db-journal
+server/db/*.db-wal
+server/db/*.db-shm
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -22,3 +34,4 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+CHANGELOG*

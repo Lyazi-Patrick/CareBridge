@@ -1,0 +1,95 @@
+/* ==========================================================================
+   CareBridge base layer — utility classes shared across the 6 Stitch mockups.
+   Consolidated so every page/component draws from the same definitions
+   (e.g. every design had its own slightly different ai-indigo-border /
+   glass-card — merged here into one canonical version each).
+   ========================================================================== */
+
+@layer components {
+  /* Elevated white card used for cases, stats, dashboard panels */
+  .premium-card {
+    background: white;
+    border: 1px solid var(--color-surface-container);
+    box-shadow: var(--shadow-level-1);
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+  .premium-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-level-2);
+  }
+
+  /* Frosted translucent panel (used over hero imagery / sticky headers) */
+  .glass-card {
+    background: rgb(255 255 255 / 0.8);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--color-surface-container);
+  }
+
+  /* Sticky nav / mobile tab bar blur */
+  .premium-blur {
+    backdrop-filter: blur(8px);
+    background: rgb(251 248 255 / 0.8);
+  }
+
+  /* Soft gradient mesh, hero sections only */
+  .hero-mesh {
+    background-color: var(--color-surface-bright);
+    background-image:
+      radial-gradient(at 100% 0%, #dde1ff 0px, transparent 50%),
+      radial-gradient(at 0% 100%, #6ffbbe 0px, transparent 50%);
+  }
+
+  /* AI Indigo accent — reserved exclusively for AI-generated content,
+     per DESIGN.md. 2px left border + faint indigo gradient wash. */
+  .ai-indigo-border {
+    border-left: 2px solid var(--color-ai-indigo);
+    background: linear-gradient(90deg, rgb(99 102 241 / 0.06) 0%, rgb(255 255 255 / 0) 100%);
+  }
+
+  /* Vertical connector line for timelines (case status history) */
+  .timeline-line {
+    position: relative;
+  }
+  .timeline-line::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 24px;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--color-outline-variant);
+  }
+
+  /* Thin custom scrollbar for filter sidebars / case lists */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: var(--color-inverse-on-surface);
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--color-outline-variant);
+    border-radius: 10px;
+  }
+}
+
+/* Respect reduced-motion preference site-wide */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Visible keyboard focus ring, consistent across all interactive elements */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
