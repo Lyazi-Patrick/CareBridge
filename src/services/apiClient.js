@@ -1,4 +1,5 @@
 const TOKEN_KEY = "carebridge_token";
+const API_BASE = (import.meta.env.VITE_API_URL || "").replace(/\/$/, "");
 
 export function getToken() {
   return localStorage.getItem(TOKEN_KEY);
@@ -18,7 +19,7 @@ async function request(path, { method = "GET", body, auth = true } = {}) {
   const token = getToken();
   if (auth && token) headers.Authorization = `Bearer ${token}`;
 
-  const response = await fetch(`/api${path}`, {
+  const response = await fetch(`${API_BASE}/api${path}`, {
     method,
     headers,
     body: body ? JSON.stringify(body) : undefined,
